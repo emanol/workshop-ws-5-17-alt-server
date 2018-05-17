@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Flask App!"
+    return "Flask App - Imanol Avendano!"
 
 @app.route("/hello")
 def hello_world():
-    return "Hello World!"
+    return "Hello World?? It's me, your computer"
 
 @app.route("/hello/<string:name>/")
 def hello(name):
@@ -26,4 +26,4 @@ def hello(name):
         'test.html',**locals())
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run()
